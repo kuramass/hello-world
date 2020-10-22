@@ -14,7 +14,7 @@ $ openssl genrsa -des3 -out key名稱.key 2048
 ## 產CSR
 $ openssl req -new -sha256 -key key名稱.key -out csr名稱.csr
 
-資訊:
+## 資訊:
 Country Name (2 letter code) [XX]:TW
 State or Province Name (full name) []:TAIWAN
 Locality Name (eg, city) [Default City]:TAIPEI
@@ -23,7 +23,7 @@ Organizational Unit Name (eg, section) []:單位名
 Common Name (eg, your name or your server's hostname) []: Domain名
 
 
-6. 將key&csr取出 (可能用到以下檔案操作)
+## 將key&csr取出 (可能用到以下檔案操作)
 $ chown --reference=參考檔 csr名稱.csr
 $ chmod --reference=參考檔 csr名稱.csr
 $ cp 來源檔 目標檔
