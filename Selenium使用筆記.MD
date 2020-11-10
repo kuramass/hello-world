@@ -2,8 +2,8 @@
     {
       "id": "23773b0a-b265-42d8-a909-d2dfb9cc08f7",
       "comment": "",
-      "command": "*executeScript*",
-      "target": "*document.getElementsByClassName('content')[0].scrollIntoView({ behavior: 'smooth', block: 'end' })*",
+      "command": "`executeScript`",
+      "target": "`document.getElementsByClassName('content')[0].scrollIntoView({ behavior: 'smooth', block: 'end' })`",
       "targets": [],
       "value": ""
     }
