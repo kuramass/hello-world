@@ -9,6 +9,7 @@
       "value": ""
     }
 
+
 # store變數
 ## 解法: 以store來做，value為變數名稱，target是變數值
     {
@@ -19,6 +20,7 @@
       "targets": [],
       "value": "HistoryNo"
     }
+
 
 # wait or pause
 ## 解法有很多，官方最推薦waitForElementVisible，但有時簡單粗暴的pause更能明快解決問題
@@ -37,6 +39,7 @@
       "targets": [],
       "value": ""
     }
+
 
 # verify
 ## 解法: verifyText最常用，target設定為該dom物件(的值)，value則手動設定應有的值
@@ -63,6 +66,7 @@
       "value": "${dataDate}"
     }
 
+
 # 下拉式選單時，Targets盡量選擇 "包含XX文字"
 ## 相較Xpath或其他selector，這種作法在檢視腳本時較直觀，也可避免不重要的html結構變化影響腳本。
     {
@@ -77,6 +81,7 @@
       ],
       "value": ""
     }
+
 
 # 變數分離
 ## 可將所有測試時要手動設定的變數析離到另一個Test Suites，以便集中設定
@@ -99,6 +104,8 @@
 
 # select window，要先在開視窗的click指令進行window config
 
+
 # 修改原Test沒有用，重新錄一個Test可以，但指令一模一樣，有時可以試試 (我碰到時忘記做*.side source json比對，若下次有碰到可以比對觀察看看)
+
 
 # break point: 開發測試腳本時要善用此功能
