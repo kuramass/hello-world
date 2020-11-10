@@ -1,5 +1,5 @@
-# 下拉式同意書條款須看完，才可勾選同意，才可下一步
-## 解法: 以execute script來做
+## 下拉式同意書條款須看完，才可勾選同意，才可下一步
+### 解法: 以execute script來做
     {
       "id": "23773b0a-b265-42d8-a909-d2dfb9cc08f7",
       "comment": "",
@@ -10,8 +10,8 @@
     }
 
 
-# store變數
-## 解法: 以store來做，value為變數名稱，target是變數值
+## store變數
+### 解法: 以store來做，value為變數名稱，target是變數值
     {
       "id": "4ee75c79-9884-4268-bca5-c3ecf93288da",
       "comment": "20200421-簡易型歷史No",
@@ -22,8 +22,8 @@
     }
 
 
-# wait or pause
-## 解法有很多，官方最推薦waitForElementVisible，但有時簡單粗暴的pause更能明快解決問題
+## wait or pause
+### 解法有很多，官方最推薦waitForElementVisible，但有時簡單粗暴的pause更能明快解決問題
     {
       "id": "a4bf513b-9f3f-4f67-a58d-d71bebfcfe64",
       "comment": "",
@@ -41,8 +41,8 @@
     }
 
 
-# verify
-## 解法: verifyText最常用，target設定為該dom物件(的值)，value則手動設定應有的值
+## verify
+### 解法: verifyText最常用，target設定為該dom物件(的值)，value則手動設定應有的值
     {
       "id": "e7acebd9-326f-4bb7-87aa-78ecd492066b",
       "comment": "",
@@ -67,8 +67,8 @@
     }
 
 
-# 下拉式選單時，Targets盡量選擇 "包含XX文字"
-## 相較Xpath或其他selector，這種作法在檢視腳本時較直觀，也可避免不重要的html結構變化影響腳本。
+## 下拉式選單時，Targets盡量選擇 "包含XX文字"
+### 相較Xpath或其他selector，這種作法在檢視腳本時較直觀，也可避免不重要的html結構變化影響腳本。
     {
       "id": "f20e1987-5975-40f9-9472-52fce0efc425",
       "comment": "",
@@ -83,8 +83,8 @@
     }
 
 
-# 變數分離
-## 可將所有測試時要手動設定的變數析離到另一個Test Suites，以便集中設定
+## 變數分離
+### 可將所有測試時要手動設定的變數析離到另一個Test Suites，以便集中設定
   "suites": [{
     "id": "faf6d461-1a32-4ce4-9cec-6564b044aa4a",
     "name": "Default Suite",
@@ -102,10 +102,8 @@
   }]
 
 
-# select window，要先在開視窗的click指令進行window config
+## select window，要先在開視窗的click指令進行window config
 
+## 修改原Test沒有用，重新錄一個Test可以，但指令一模一樣，有時可以試試 (我碰到時忘記做*.side source json比對，若下次有碰到可以比對觀察看看)
 
-# 修改原Test沒有用，重新錄一個Test可以，但指令一模一樣，有時可以試試 (我碰到時忘記做*.side source json比對，若下次有碰到可以比對觀察看看)
-
-
-# break point: 開發測試腳本時要善用此功能
+## break point: 開發測試腳本時要善用此功能
